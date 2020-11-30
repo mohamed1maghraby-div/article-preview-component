@@ -1,0 +1,134 @@
+body{
+    //background: url(images/pattern-bg.svg) no-repeat;
+    //background-position: 91% -6%;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    @media (max-width: 960px) {
+        font-size: 19px;
+        text-align: center;
+    }
+    .page{
+        /*background-image: url('images/pattern-curve.svg');
+        background-repeat: no-repeat;
+        background-position: 0 100%;*/
+        .bg-1{
+            position: absolute;
+            right: 4%;
+            top: 8%;
+            height: 85%;
+            @media (max-width: 960px) {
+                position: absolute;
+                right: 4%;
+                top: 2%;
+                height: 48%;
+            }
+        }
+        .bg-2{
+            position: absolute;
+            bottom: 0;
+            @media (max-width: 960px) {
+                display: none;
+            }
+        }
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        .testimonials{
+            position: relative;
+            width: 81%;
+            margin: 7% 10% 0 10%;
+            .testi{
+                position: relative;
+                min-height: 450px;
+                .text-area{
+                    position: absolute;
+                    z-index: 2;
+                    width: 57%;
+                    margin: 7% 12%;
+                    @media (max-width: 960px) {
+                        width: 100%;
+                        margin: 0;
+                        top: 80%;
+                    }
+                    &::before{
+                        content: '';
+                        background-image: url(images/pattern-quotes.svg);
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: -10%;
+                        left: 12%;
+                        @media (max-width: 960px) {
+                            background-position: 36% 0;
+                            background-size: 25% 27%;
+                            top: -5%;
+                        }
+                    }
+                    .text{
+                        color: hsl(240, 38%, 20%);
+                        font-weight: 100;
+                    }
+                    .author{
+                        b{
+                            color: hsl(240, 38%, 20%);
+                            font-weight: 700;
+                            @media (max-width: 960px) {
+                                display: block;
+                                line-height: 17px;
+                            }
+                        }
+                        color: hsl(240, 18%, 77%);
+                        font-weight: 100;
+                        margin: 0;
+                    }
+                }
+                .img-area{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 1;
+                    margin-left: auto;
+                    @media (max-width: 960px) {
+                        width: 100%;
+                        text-align: center;
+                        top: 4%;
+                    }
+                    img{
+                        max-width: 420px;
+                        max-height: 420px;
+                        @media (max-width: 960px) {
+                            max-height: 87%;
+                            max-width: 87%;
+                        }
+                    }
+                }
+            }
+            .testi-2{
+                display: none;
+            }
+            .arrwos{
+                background: #fff;
+                position: absolute;
+                right: 300px;
+                bottom: 15px;
+                z-index: 3;
+                border-radius: 25px;
+                @media (max-width: 960px) {
+                    right: 0;
+                    left: 0;
+                    bottom: 152px;
+                    width: 85px;
+                    margin: 0 auto;
+                    padding: 8px 0;
+                }
+                a{
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+}
