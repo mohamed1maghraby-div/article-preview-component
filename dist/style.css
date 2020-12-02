@@ -135,15 +135,18 @@
           .page article .text .auther .auther-img {
             margin-left: 10%; } }
       .page article .text .auther .auther-text {
-        display: inline-block; }
+        display: inline-block;
+        position: relative;
+        top: -6px; }
         @media (max-width: 800px) {
           .page article .text .auther .auther-text {
             margin-bottom: 20px; } }
-        .page article .text .auther .auther-text h6 {
+        .page article .text .auther .auther-text .span-auther {
           margin: 0;
           padding: 5px;
-          color: #48556a; }
-        .page article .text .auther .auther-text span {
+          color: #48556a;
+          font-weight: 700; }
+        .page article .text .auther .auther-text .span-date {
           padding: 5px;
           color: #9eafc2; }
 

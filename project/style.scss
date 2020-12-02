@@ -145,15 +145,18 @@
                 }
                 .auther-text{
                     display: inline-block;
+                    position: relative;
+                    top: -6px;
                     @media (max-width: 800px) {
                         margin-bottom: 20px;
                     }
-                    h6{
+                    .span-auther{
                         margin: 0;
                         padding: 5px;
                         color: hsl(217, 19%, 35%);
+                        font-weight: 700;
                     }
-                    span{
+                    .span-date{
                         padding: 5px;
                         color: hsl(212, 23%, 69%);
                     }
