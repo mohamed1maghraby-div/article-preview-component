@@ -1,116 +1,150 @@
-body {
-  font-size: 32px;
-  font-family: 'Inter', sans-serif;
-  height: 100vh; }
-  @media (max-width: 960px) {
-    body {
-      font-size: 19px;
-      text-align: center; } }
-  body .page {
-    /*background-image: url('images/pattern-curve.svg');
-        background-repeat: no-repeat;
-        background-position: 0 100%;*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%; }
-    body .page .bg-1 {
-      position: absolute;
-      right: 4%;
-      top: 8%;
-      height: 85%; }
-      @media (max-width: 960px) {
-        body .page .bg-1 {
-          position: absolute;
-          right: 4%;
-          top: 2%;
-          height: 48%; } }
-    body .page .bg-2 {
-      position: absolute;
-      bottom: 0; }
-      @media (max-width: 960px) {
-        body .page .bg-2 {
-          display: none; } }
-    body .page .testimonials {
+.page {
+  background-color: #ecf2f8;
+  height: 100vh;
+  font-family: 'Manrope', sans-serif; }
+  .page p, .page h6, .page span {
+    font-size: 13px; }
+  .page article {
+    width: 730px;
+    height: 285px;
+    background-color: #fff;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 10px;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%); }
+    @media (max-width: 800px) {
+      .page article {
+        -webkit-transform: translateY(18%);
+                transform: translateY(18%);
+        max-width: 320px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: auto; }
+        .page article .img {
+          -webkit-box-flex: 0 !important;
+              -ms-flex: none !important;
+                  flex: none !important;
+          height: 200px;
+          border-radius: 10px 10px 0 0 !important; } }
+    .page article .img {
+      background-image: url("images/drawers.jpg");
+      background-size: cover;
+      -webkit-box-flex: 3;
+          -ms-flex: 3;
+              flex: 3;
+      border-radius: 10px 0 0 10px; }
+    .page article .text {
       position: relative;
-      width: 81%;
-      margin: 7% 10% 0 10%; }
-      body .page .testimonials .testi {
-        position: relative;
-        min-height: 450px; }
-        body .page .testimonials .testi .text-area {
-          position: absolute;
-          z-index: 2;
-          width: 57%;
-          margin: 7% 12%; }
-          @media (max-width: 960px) {
-            body .page .testimonials .testi .text-area {
-              width: 100%;
-              margin: 0;
-              top: 80%; } }
-          body .page .testimonials .testi .text-area::before {
-            content: '';
-            background-image: url(images/pattern-quotes.svg);
-            background-repeat: no-repeat;
+      padding: 4%;
+      -webkit-box-flex: 4;
+          -ms-flex: 4;
+              flex: 4; }
+      @media (max-width: 800px) {
+        .page article .text {
+          padding: 0; }
+          .page article .text h2 {
+            padding: 11% 10% 5% 10%;
+            margin: 0;
+            font-size: 18px; }
+          .page article .text p {
+            padding: 0 10% 5% 10%;
+            margin: 0; } }
+      .page article .text h2 {
+        margin: 0;
+        color: #48556a; }
+      .page article .text p {
+        font-size: 15px;
+        color: #6d7f97; }
+      @media (max-width: 800px) {
+        .page article .text .auther {
+          position: relative; }
+          .page article .text .auther .share-icons {
             position: absolute;
             width: 100%;
-            height: 100%;
-            top: -10%;
-            left: 12%; }
-            @media (max-width: 960px) {
-              body .page .testimonials .testi .text-area::before {
-                background-position: 36% 0;
-                background-size: 25% 27%;
-                top: -5%; } }
-          body .page .testimonials .testi .text-area .text {
-            color: #202046;
-            font-weight: 100; }
-          body .page .testimonials .testi .text-area .author {
-            color: #babacf;
-            font-weight: 100;
-            margin: 0; }
-            body .page .testimonials .testi .text-area .author b {
-              color: #202046;
-              font-weight: 700; }
-              @media (max-width: 960px) {
-                body .page .testimonials .testi .text-area .author b {
-                  display: block;
-                  line-height: 17px; } }
-        body .page .testimonials .testi .img-area {
+            top: 0; } }
+      .page article .text .auther .share-icons {
+        position: relative; }
+        .page article .text .auther .share-icons button {
           position: absolute;
-          top: 0;
-          right: 0;
-          z-index: 1;
-          margin-left: auto; }
-          @media (max-width: 960px) {
-            body .page .testimonials .testi .img-area {
+          right: 18px;
+          bottom: 5px;
+          background-color: #ecf2f8;
+          border: none;
+          padding: 6px 8px;
+          border-radius: 50%;
+          cursor: pointer; }
+          @media (max-width: 800px) {
+            .page article .text .auther .share-icons button {
+              position: absolute;
+              right: 32px;
+              bottom: 20px;
+              z-index: 2; } }
+        .page article .text .auther .share-icons button.active {
+          background-color: #6d7f97; }
+          .page article .text .auther .share-icons button.active img {
+            -webkit-filter: brightness(0) invert(1);
+                    filter: brightness(0) invert(1); }
+        .page article .text .auther .share-icons .icons {
+          position: absolute;
+          background-color: #48556a;
+          padding: 12px 15px;
+          border-radius: 10px;
+          right: -71px;
+          bottom: 61px;
+          display: none; }
+          @media (max-width: 800px) {
+            .page article .text .auther .share-icons .icons {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              border-radius: 0;
               width: 100%;
-              text-align: center;
-              top: 4%; } }
-          body .page .testimonials .testi .img-area img {
-            max-width: 420px;
-            max-height: 420px; }
-            @media (max-width: 960px) {
-              body .page .testimonials .testi .img-area img {
-                max-height: 87%;
-                max-width: 87%; } }
-      body .page .testimonials .testi-2 {
-        display: none; }
-      body .page .testimonials .arrwos {
-        background: #fff;
-        position: absolute;
-        right: 300px;
-        bottom: 15px;
-        z-index: 3;
-        border-radius: 25px; }
-        @media (max-width: 960px) {
-          body .page .testimonials .arrwos {
-            right: 0;
-            left: 0;
-            bottom: 152px;
-            width: 85px;
-            margin: 0 auto;
-            padding: 8px 0; } }
-        body .page .testimonials .arrwos a {
-          padding: 10px 15px; }
+              padding: 23px 0;
+              display: none; }
+              .page article .text .auther .share-icons .icons::after {
+                display: none; }
+              .page article .text .auther .share-icons .icons span {
+                padding: 0 15px 0 25px !important; } }
+          .page article .text .auther .share-icons .icons span {
+            position: relative;
+            top: -2px;
+            letter-spacing: 4px;
+            color: #9eafc2; }
+          .page article .text .auther .share-icons .icons span, .page article .text .auther .share-icons .icons img {
+            padding: 0 10px; }
+          .page article .text .auther .share-icons .icons::after {
+            content: '';
+            position: absolute;
+            bottom: -19px;
+            border-style: solid;
+            border-width: 10px;
+            border-color: #48556a transparent transparent transparent;
+            height: 0;
+            width: 0;
+            left: 50%; }
+      .page article .text .auther .auther-img {
+        margin-top: 1px;
+        border-radius: 50%;
+        display: inline-block; }
+        @media (max-width: 800px) {
+          .page article .text .auther .auther-img {
+            margin-left: 10%; } }
+      .page article .text .auther .auther-text {
+        display: inline-block; }
+        @media (max-width: 800px) {
+          .page article .text .auther .auther-text {
+            margin-bottom: 20px; } }
+        .page article .text .auther .auther-text h6 {
+          margin: 0;
+          padding: 5px;
+          color: #48556a; }
+        .page article .text .auther .auther-text span {
+          padding: 5px;
+          color: #9eafc2; }
+
+/* this site made by Mohamed Maghraby */

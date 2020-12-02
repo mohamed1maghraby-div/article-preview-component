@@ -1,9 +1,10 @@
-var elem = document.querySelector('.testi-1');
-document.querySelector('.prev').onclick = function(){
-    elem.nextElementSibling.style.display = 'none';
-    elem.style.display = 'block';
-}
-document.querySelector('.next').onclick = function(){
-    elem.nextElementSibling.style.display = 'block';
-    elem.style.display = 'none';
+/* this site made by Mohamed Maghraby */
+document.querySelector('.share-icons button').onclick = function(){
+    if(this.classList.contains('active')){
+        this.classList.remove('active');
+        document.querySelector('.icons').style.display = 'none';
+    }else{
+        this.classList.add('active');
+        document.querySelector('.icons').style.display = 'block';
+    }
 }

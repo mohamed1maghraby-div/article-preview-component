@@ -1,8 +1,10 @@
+/* this site made by Mohamed Maghraby */
 var gulp = require('gulp'),
     pug = require('gulp-pug'),
-    prefix = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
+    prefix = require('gulp-autoprefixer'),
     livereload = require('gulp-livereload');
+
 gulp.task('html', function(){
     return gulp.src('project/index.pug')
     .pipe(pug({pretty : true}))
@@ -13,6 +15,7 @@ gulp.task('html', function(){
 gulp.task('css', function(){
     return gulp.src('project/style.scss')
     .pipe(sass())
+    .pipe(prefix('last 2 versions'))
     .pipe(gulp.dest('dist'))
     .pipe(livereload())
 });
